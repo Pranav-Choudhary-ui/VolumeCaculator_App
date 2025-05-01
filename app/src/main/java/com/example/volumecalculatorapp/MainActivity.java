@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                TextView a = view.findViewById(R.id.text1);
+                TextView a = findViewById(R.id.text1);
                 String name = a.getText().toString();
 //
 //                Method 1-
@@ -73,10 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity2.class);
                 i.putExtra("name",name);
                 startActivity(i);
-
-
-
-
             }
         });
 
