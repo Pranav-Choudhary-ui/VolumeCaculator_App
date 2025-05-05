@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView a = findViewById(R.id.text1);
                 String name = a.getText().toString();
 //
-//                Method 1-
+//                Method 1- creating different activities for each shape
 //                try {
 //                    Class<?> activityclass = Class.forName("com.example.volumecalculatorapp." + str);
 //                    Intent i = new Intent(getApplicationContext(), activityclass);
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 //                }
 
 
-//                Method 2 -
+//                Method 2 - using only 1 activity by applying switch case
                 Intent i = new Intent(getApplicationContext(), MainActivity2.class);
                 i.putExtra("name",name);
                 startActivity(i);
